@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.primary-title {
+  font-size: 50px;
+  margin: 0.5em 0; /* отступ 25пикс так как фонт сайз 50пикс */
+}
+
+.secondary-title {
+  font-size: 36px;
+  margin: 0.4em 0;
+}
+
+.color-purple{
+    color: rgb(128, 0, 128)
+}
+
+.main-bg-color{
+    background: #add8e6;
+}
+
+.random-color{
+    color: hsla(30, 49%, 63%, 0.5)
+}
+
+/* если работаем с float то нужно сlearfix  и он задаеся родителю*/
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
