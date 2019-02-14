@@ -7,9 +7,8 @@ body {
 }
 
 header {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
-  width: 1600px;
 }
 
 /* header */
@@ -20,6 +19,7 @@ header {
 }
 
 .site-navigation {
+
   width: 1110px;
   margin: 0 auto;
 }
@@ -74,9 +74,8 @@ header {
   clear: both;
 }
 .wrapper {
-  display: inline-block;
+  display: block;
   padding-bottom: 100px;
-  width: 1600px;
   background-color: #e9f0fd;
 }
 img {
@@ -86,7 +85,7 @@ img {
 }
 
 .bgfoto {
-  width: 1600px;
+  
   height: 600px;
   background-image: url(../img/bgfoto.jpg);
 
@@ -106,6 +105,7 @@ img {
 
 .slider .slider-ctrl-next:hover{
 background-color: #1abc9c;
+cursor: pointer;
 }
 .slider-ctrl-previosly::before {
   content: "\2039";
@@ -115,19 +115,20 @@ background-color: #1abc9c;
 }
 .slider .slider-ctrl-previosly:hover{
   background-color: #1abc9c;
+  cursor: pointer;
   }
 
 .slider {
   position: relative;
   width: 1110px;
-  height: 400px;
+  height: 600px;
   margin: 0 auto;
-  /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0, 0.3); */
 }
 
 .slider-ctrl {
   position: absolute;
-  top: 225px;
+  top: 50%;
+  transform: translateY(-50%);
   border: none;
   display: inline-block;
   width: 104px;
@@ -146,7 +147,8 @@ background-color: #1abc9c;
   font-family: 'Myriad Pro', sans-serif;
   position: absolute;
   left: 207px;
-  top: 210px;
+  top: 45%;
+  transform: translateY(-50%);
   display: inline-block;
   font-size: 58px;
   color: #fff;
@@ -155,7 +157,7 @@ background-color: #1abc9c;
   font-family: 'Myriad Pro', sans-serif;
   position: absolute;
   left: 207px;
-  top: 292px;
+  top: 50%;
   display: inline-block;
   font-size: 23px;
   color: #fff;
@@ -163,7 +165,7 @@ background-color: #1abc9c;
 
 
 .section-2 {
-  width: 1600px;
+  
   margin: 0 auto;
   background-color: #e9f0fd;
 }
@@ -273,10 +275,10 @@ hr {
   opacity: 0;
 }
 
-.item1 .overlay:hover,
-.item2 .overlay:hover,
-.item3 .overlay:hover,
-.item4 .overlay:hover {
+.item1:hover .overlay,
+.item2:hover .overlay,
+.item3:hover .overlay,
+.item4:hover .overlay {
   opacity: 0.9;
 }
 
@@ -346,12 +348,13 @@ hr {
 .overlay .icon3:hover,
 .overlay .icon4:hover {
   background-color: #1abc9c;
+  cursor: pointer;
 }
 
 .footer {
   margin-top: 99px;
   padding-top: 38px;
-  width: 1600px;
+ 
   height: 87px;
   margin: 0 auto;
   text-align: center;
