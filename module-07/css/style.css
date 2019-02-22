@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+/* header */
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  .page-header {
+    margin-top: 29px;
+  }
+  
+  .page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+  }
+  
+  .site-logo {
+    display: inline-block;
+    background: none;
+    background-image: url(../img/Logo-Treehouse.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    min-height: 27px;
+    margin-left: 2px;
+  }
+  
+  .site-navigation {
+    display: flex;
+    justify-content: space-between;
+    min-height: 15px;
+    width: 485px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .site-navigation-item {
+    position: relative;
+    display: block;
+    color: black;
+    font-family: 'Montserrat-Regular';
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+ 
+  }
+  
+  .site-navigation-item:hover {
+    color: #fed136;
+  }
+
+  /* main */
+
+ main{
+   max-width: 1400px;
+   min-width: 320px;
+   margin: 0 auto;
+ }
+
+ img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+  h1{
+    margin-top: 128px;
+    font-family: 'Montserrat-Bold';
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h2{
+    font-family: 'Montserrat-Regular';
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    color: #777777;
+  }
+  
+.services-menu{
+  display: flex;
+  justify-content: space-between;
+  min-height: 235px;
+  margin-bottom: 100px;
+}
+
+.services-menu-item{
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 290px;
+  min-height: 235px;
+  padding-bottom: 20px;
+}
+
+.services-menu-item:hover{
+  cursor: pointer;
+}
+
+.services-menu-item  p{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.icon-ecommerce{
+  background-image: url(../img/1logo.png);
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 75px;  
+  padding-bottom: 20px;
+}
+.icon-responsive{
+  background-image: url(../img/2logo.png);
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 75px;  
+  padding-bottom: 20px;
+}
+.icon-security{
+  background-image: url(../img/3logo.png);
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 75px;  
+  padding-bottom: 20px;
+}
+
+/* main section 2 */
+
+.section-2{
+  background-color: rgb(34, 34, 34);
+  background-image: url(../img/MapImage.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 100px 0 140px 0;
+}
+
+.contactus{
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  color: white;
+  font-size: 40px;
+}
+
+.mailform{
+  font-family: 'Montserrat-Bold';
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+  margin-top: 75px;
+  
+}
+
+.form1{
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input{
+  font-family: 'Montserrat-Bold';
+  font-weight: normal;
+  font-style: normal;
+  width: 455px;
+  height: 53px;
+  border: none;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: 3px;
+}
+
+
+
+input[type="text"]:focus:invalid,
+input[type="email"]:focus:invalid
+{
+  outline: 2px solid rgba(255, 0, 0, 0.7);
+}
+
+input[type="text"]:focus:valid,
+input[type="email"]:focus:valid
+{
+  outline: 2px solid green;
+} 
+
+textarea{
+  font-family: 'Montserrat-Bold';
+  font-weight: normal;
+  font-style: normal;
+  width: 455px;
+  height: 223px;
+  border-radius: 3px;
+  padding: 5px 0 0 5px;
+  margin-left: 17px;
+}
+
+.button{
+  font-family: 'Montserrat-Bold';
+  font-weight: normal;
+  font-style: normal;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 240px;
+  height: 65px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(254, 209, 54);
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+ 
+
+
