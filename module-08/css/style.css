@@ -127,11 +127,20 @@ img {
   text-align: center;
 }
 
+.menu-partners{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .menu-partners-item {
   display: flex;
   flex-direction: column;
-  max-width: 220px;
-  margin: 1.18em auto 0;
+  align-items: center;
+  max-width: 235px;
+  margin-top: 0.875em;
+  margin-bottom: 0.43em;
 }
 
 .h4-menu {
@@ -139,7 +148,6 @@ img {
   font-family: "Montserrat-Bold";
   font-weight: 400;
   font-style: normal;
-  text-align: center;
   font-size: 14px;
 }
 
@@ -147,18 +155,16 @@ img {
   font-family: "Roboto-Light";
   font-weight: 300;
   font-style: normal;
-  margin-top: 0.75em;
+  font-size: 15px;
   text-align: center;
-  font-size: 14px;
   color: rgb(102, 102, 102);
+  margin-top: 1.18em;
 }
 
 .border-img-1 {
   position: relative;
-  display: inline-block;
-  height: 122px;
-  width: 122px;
-  margin: 0 auto;
+  min-height: 122px;
+  min-width: 122px;
   border-radius: 50%;
   background: url("../img/1menu.jpg") rgb(251, 251, 251);
 }
@@ -174,10 +180,8 @@ img {
 
 .border-img-2 {
   position: relative;
-  display: inline-block;
   height: 122px;
   width: 122px;
-  margin: 0 auto;
   border-radius: 50%;
   background: url("../img/2menu.jpg") rgb(251, 251, 251);
 }
@@ -193,10 +197,8 @@ img {
 
 .border-img-3 {
   position: relative;
-  display: inline-block;
   height: 122px;
   width: 122px;
-  margin: 0 auto;
   border-radius: 50%;
   background: url("../img/3menu.jpg") rgb(251, 251, 251);
 }
@@ -212,10 +214,8 @@ img {
 
 .border-img-4 {
   position: relative;
-  display: inline-block;
   height: 122px;
   width: 122px;
-  margin: 0 auto;
   border-radius: 50%;
   background: url("../img/4menu.jpg") rgb(251, 251, 251);
 }
@@ -246,95 +246,158 @@ img {
   outline: none;
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 769px) {
   .page-header {
-    width: 100%;
-    margin: 0 auto;
     background: url(../img/bgtablet.jpg) no-repeat center top;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     height: 700px;
   }
 }
 
-@media (min-width: 430px) and (max-width: 768px) {
+@media (min-width: 430px) and (max-width: 769px) {
   .site-nav {
-    width: 100%;
-    display: flex;
+    width: 87.63%;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    list-style: none;
+    max-height: 20px;
   }
   .authorization {
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: flex-start;
-    position: relative;
-    min-height: 75px;
     margin-top: 35px;
   }
   .site-logo {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
     margin-top: 40px;
   }
+  
+  .menu-partners{
+    width: 64.06%;
+    margin: 0 auto;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .menu-partners-item {
+    margin-top: 1.93em;
+  }
+
 }
 
-@media (min-width: 560px) and (max-width: 768px) {
+@media (min-width: 560px) and (max-width: 769px) {
   .site-nav {
-    width: 100%;
-    display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    list-style: none;
-  }
-
-  .authorization {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    position: relative;
-    min-height: 75px;
-    margin-top: 35px;
-    margin-right: 50px;
   }
 
   .site-logo {
-    width: 100%;
     text-align: left;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin-top: 40px;
     margin-left: 50px;
   }
 
   .name {
-    font-family: "Montserrat";
     font-size: 52px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    margin-top: 15px;
+    margin-top: 1em;
   }
 
   .headp {
-    max-width: 380px;
-    text-align: center;
+    min-width: 395px;
     font-size: 24px;
-    color: white;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .find-partner {
+    height: 40px;
+    width: 225px;
+  }
+
+  .h2partners {
+    min-width: 420px;
+  }
+
+  .menu-partners{
+    width: 64.06%;
+    margin: 0 auto;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .menu-partners-item {
+    margin-top: 1.93em;
+  }
+}
+
+@media (min-width: 770px) {
+  .page-header {
+    background: url(../img/bgdesctop.jpg) no-repeat center top;
+    height: 700px;
+  }
+
+  .site-nav {
+    width: 65.48%;
+    flex-direction: row-reverse;
+    max-height: 20px;
+  }
+
+  .authorization {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+
+  .site-logo {
+    width: 100%;
+    margin-top: 40px;
+    text-align: left;
+    
+  }
+
+  .name {
+    font-size: 52px;
+    margin-top: 0;
+  }
+
+  .headp {
+    min-width: 395px;
+    font-size: 24px;
     margin-top: 1em;
     margin-bottom: 0.5em;
   }
   .find-partner {
     height: 40px;
     width: 225px;
+  }
+  .h2partners {
+    min-width: 420px;
+  }
+  .menu-partners{
+    width: 65.4%;
+    margin: 0 auto;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .menu-partners-item {
+    margin-top: 1.93em;
+}
+}
+
+@media (min-width: 1024px){
+  .menu-partners{
+    width: 84%;
+  }
+}
+
+@media (min-width: 1024px){
+  .menu-partners{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1223px){
+  .menu-partners{
+    width: 84%;
   }
 }
