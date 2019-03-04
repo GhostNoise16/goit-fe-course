@@ -117,11 +117,13 @@ img {
   margin-top: 20px;
 }
 
+.section-1{
+  padding-top: 4.375em;
+}
 
 .h2partners {
   max-width: 260px;
   margin: 0 auto;
-  padding-top: 4.375em;
   font-size: 22px;
   font-family: "Montserrat-Bold";
   font-weight: 700;
