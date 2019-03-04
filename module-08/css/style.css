@@ -21,7 +21,7 @@ img {
 .page-header {
   width: 100%;
   margin: 0 auto;
-  background: url(../img/bgmobile.jpg) no-repeat center top;
+  background: url(../img/bgmobile.jpg) no-repeat center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -84,7 +84,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  margin-top: 18px;
+  margin-top: 1.125em;
 }
 
 .headp {
@@ -250,7 +250,7 @@ img {
 
 @media (min-width: 321px) and (max-width: 768px) {
   .page-header {
-    background: url(../img/bgtablet.jpg) no-repeat center top;
+    background: url(../img/bgtablet.jpg) no-repeat center;
     height: 700px;
   }
 }
@@ -326,7 +326,8 @@ img {
 
 @media (min-width: 769px) {
   .page-header {
-    background: url(../img/bgdesctop.jpg) no-repeat center top;
+    background: url(../img/bgdesctop.jpg) no-repeat center;
+    background-size: cover;
     height: 700px;
   }
 
@@ -401,7 +402,19 @@ img {
 
 @media (min-width: 1529px){
   .menu-partners {
-    width: 63%;
+    width: 62%;
+  }
+}
+
+@media (min-width: 1970px){
+  .menu-partners {
+    width: 48%;
+  }
+}
+
+@media (min-width: 2549px){
+  .menu-partners {
+    width: 46%;
   }
 }
 
