@@ -117,9 +117,11 @@ img {
   margin-top: 20px;
 }
 
+
 .h2partners {
   max-width: 260px;
-  margin: 3.5em auto 0;
+  margin: 0 auto;
+  padding-top: 4.375em;
   font-size: 22px;
   font-family: "Montserrat-Bold";
   font-weight: 700;
@@ -246,14 +248,14 @@ img {
   outline: none;
 }
 
-@media (min-width: 321px) and (max-width: 769px) {
+@media (min-width: 321px) and (max-width: 768px) {
   .page-header {
     background: url(../img/bgtablet.jpg) no-repeat center top;
     height: 700px;
   }
 }
 
-@media (min-width: 430px) and (max-width: 769px) {
+@media (min-width: 430px) and (max-width: 768px) {
   .site-nav {
     width: 87.63%;
     flex-direction: row-reverse;
@@ -261,13 +263,15 @@ img {
   }
   .authorization {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     margin-top: 35px;
   }
   .site-logo {
     width: 100%;
     margin-top: 40px;
+    text-align: left;
+
   }
 
   .menu-partners {
@@ -278,9 +282,6 @@ img {
     align-items: flex-start;
   }
 
-  .menu-partners-item {
-    margin-top: 1.93em;
-  }
   .element-one {
     order: -2;
   }
@@ -290,19 +291,12 @@ img {
   }
 }
 
-@media (min-width: 560px) and (max-width: 769px) {
-  .site-nav {
-    flex-direction: row-reverse;
-  }
-
-  .site-logo {
-    text-align: left;
-    margin-left: 50px;
-  }
+@media (min-width: 560px) and (max-width: 768px) {
 
   .name {
     font-size: 52px;
-    margin-top: 1em;
+    margin-top: 0;
+
   }
 
   .headp {
@@ -323,21 +317,14 @@ img {
 
   .menu-partners {
     width: 84%;
-    margin: 0 auto;
-    flex-flow: wrap row;
-    justify-content: center;
-    align-items: flex-start;
   }
 
   .menu-partners-item {
-    margin-top: 1.93em;
+    margin-top: 1.938em;
   }
-
-  
-
 }
 
-@media (min-width: 770px) {
+@media (min-width: 769px) {
   .page-header {
     background: url(../img/bgdesctop.jpg) no-repeat center top;
     height: 700px;
@@ -408,6 +395,13 @@ img {
 
 @media (min-width: 1223px) {
   .menu-partners {
-    width: 84%;
+    width: 80%;
   }
 }
+
+@media (min-width: 1529px){
+  .menu-partners {
+    width: 63%;
+  }
+}
+
