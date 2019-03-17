@@ -4,7 +4,7 @@
 }
 
 .header__bg  {
-    background-image: url(img/bg.jpg);
+    background-image: url(img/header-bg.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     height: 1000px;
@@ -334,7 +334,7 @@ h2 {
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
-    background: url(img/bg@2x.jpg) no-repeat center top;
+    background: url(img/header-bg@2x.jpg) no-repeat center top;
   min-height: 1000px;
   }
 }
