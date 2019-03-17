@@ -1,0 +1,343 @@
+
+.header{
+  min-height: 1000px;
+}
+
+.header__bg  {
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 1000px;
+  }
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+}
+
+.header__logo{
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header__navigation{
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 490px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+  font-family: "Myriad Pro" sans-serif;
+}
+
+.header__navigation--item {
+  position: relative;
+  display: block;
+  color: #fff !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-size: 14px;
+  transition: color 200ms linear;
+}
+
+.header__navigation--item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -35%;
+  width: 100%;
+  height: 3px;
+  background: #fce38a;
+  transform: scaleX(0);
+  transition: transform 200ms linear;
+}
+
+.header__navigation--item:hover  {
+  color: #fce38a;
+}
+.header__navigation--item:hover::after  {
+  transform: scaleX(1);
+}
+
+
+/* Main */
+
+
+h2 {
+  font-size: 24px;
+  font-family: "KaushanScript";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 21px;
+
+}
+
+.h3 {
+  position: relative;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+.h3::after {
+  content: "";
+  position: absolute;
+  left: 47.5%;
+  bottom: -42px;
+  width: 60px;
+  height: 5px;
+  background: #f38181;
+  transform: scaleX(1);
+}
+
+.service {
+  margin-top: 67px;
+}
+
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: none;
+}
+
+.service__list--item {
+    position: relative;
+    flex: 0 0 380px;
+  height: 145px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 15px;
+  color: #999999;
+  background-color: none;
+  cursor: pointer;
+}
+
+.service__list--item h4 {
+  position: absolute;
+  top: 40px;
+  left: 92px;
+  font-size: 14px;
+  font-family: "Montserrat" sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.service__list--item p {
+  position: absolute;
+  left: 92px;
+  top: 65px;
+  font-size: 14px;
+  font-family: "Montserrat" sans-serif;
+  color: #b3b3b3;
+}
+
+.service__svg{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 20px;
+  top: 40px;
+}
+
+.text-p {
+  margin: 0 auto;
+  margin-top: 95px;
+  width: 945px;
+  color: #b3b3b3;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Card menu */
+.card-menu {
+  margin-top: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.card-menu-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 380px;
+  background-image: none;
+  transition: background-image 2s;
+}
+
+.card-menu-image {
+  background-image: linear-gradient(90deg,rgb(252, 227, 138) 0%,rgb(243, 129, 129) 100%);
+  
+}
+
+.card-menu-image:hover img {
+  opacity: 0.3;
+}
+
+
+.card-menu-item:hover {
+  box-shadow: 0 14px 28px rgba(70, 53, 53, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.card-menu-item .card-menu-image {
+  position: relative;
+  transition: transform 200ms linear;
+}
+
+.card-menu-item .card-menu-image:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 15px 15px rgba(149, 225, 211, 1);
+}
+
+.card-menu-socials {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-menu-socials a {
+  display: block;
+  height: 56px;
+  width: 56px;
+  border-right: 0.5pt solid rgb(246, 161, 161);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fce38a;
+  opacity: 0;
+  transition: opacity 0.5s, background-color 0.5s;
+}
+
+.card-menu-image:hover a {
+  opacity: 1;
+}
+
+.icon-facebook {
+  background-image: url(../img/facebook.png);
+}
+
+.icon-facebook:hover {
+  background-color: #95e1d3;
+}
+
+.icon-instagram {
+  background-image: url(../img/instagram.png);
+}
+
+.icon-instagram:hover {
+  background-color: #95e1d3;
+}
+
+.icon-pinterest {
+  background-image: url(../img/pinterest.png);
+}
+
+.icon-pinterest:hover {
+  background-color: #95e1d3;
+}
+
+.icon-twitter {
+  background-image: url(../img/twitter.png);
+}
+
+.icon-twitter:hover {
+  background-color: #95e1d3;
+}
+
+.name-card {
+  font-family: "Montserrat" sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+  margin-top: 30px;
+}
+
+.position {
+  margin-top: 14px;
+  font-family: "Roboto" sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #9f9f9f;
+  font-weight: 14px;
+}
+
+
+/* footer */
+.footer{
+  margin-top: 80px;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+  min-width: 100%;
+  border-top: 1px solid #e5e5e5;
+  background-color: none;
+}
+
+.about-dev {
+  color: #333333;
+}
+.about-dev a {
+  text-decoration: none;
+  color: hsl(0, 83%, 80%);
+}
+
+.subscribe input {
+  width: 230px;
+  height: 40px;
+  border: 0.5px solid #e7e7e7;
+}
+
+.subscribe button {
+  background-color: #95e1d3;
+  border: none;
+  width: 150px;
+  height: 40px;
+  margin-left: -4px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat" sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+  only screen and (-moz-min-device-pixel-ratio: 1.5),
+  only screen and (-o-min-device-pixel-ratio: 3/2),
+  only screen and (min-device-pixel-ratio: 1.5) {
+    .header {
+      background: url(/img/bg.jpg) no-repeat center top;
+    min-height: 1000px;
+    }
+  }
