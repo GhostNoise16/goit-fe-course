@@ -225,7 +225,9 @@ img {
   .site-nav {
     width: 87.63%;
     flex-direction: row-reverse;
-    max-height: 20px;
+    min-height: 0;
+    margin-bottom: 4.0em;
+
   }
   .authorization {
     width: 100%;
@@ -253,8 +255,6 @@ img {
 
   .name {
     font-size: 52px;
-    margin-top: 0.3em;
-
   }
 
   .headp {
