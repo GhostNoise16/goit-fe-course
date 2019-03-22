@@ -43,6 +43,7 @@ img {
 }
 
 .header__menu {
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +54,10 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10.5em;
+
 }
 
 .header__logo {
@@ -73,8 +78,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 20px;
-  margin: 0;
-  padding: 0;
+  width: 52%;
   font-size: 14px;
   list-style: none;
 }
@@ -149,14 +153,14 @@ img {
   font-size: 150px;
   color: #fff;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 45px;
+
 }
 
 .header__h2 {
   font-family: "KaushanScript-Regular";
   font-style: normal;
   font-weight: 100;
-  margin-top: 2.48em;
   text-align: center;
   font-size: 72px;
   color: #fff;
@@ -168,7 +172,6 @@ img {
   font-style: normal;
   display: block;
   margin: 0 auto;
-  margin-top: 2.7em;
   text-transform: uppercase;
   font-size: 14px;
   border: 3px solid #fff;
@@ -190,6 +193,9 @@ img {
 }
 
 /* Main */
+.main{
+  margin-bottom: 80px;
+}
 
 h2 {
   font-family: "KaushanScript-Regular";
@@ -210,6 +216,8 @@ h2 {
   text-transform: uppercase;
   color: #333333;
   text-align: center;
+  margin-bottom: 95px;
+
 }
 
 .service__h3::after {
@@ -225,9 +233,7 @@ h2 {
           transform: scaleX(1);
 }
 
-.service {
-  margin-top: 67px;
-}
+
 
 .service__list {
   display: -webkit-box;
@@ -294,15 +300,15 @@ h2 {
   font-family: "Roboto-Light";
   font-weight: 300;
   font-style: normal;
-  margin-top: 95px;
   color: #b3b3b3;
   font-size: 15px;
   text-align: center;
+  margin-bottom: 95px;
+
 }
 
 /* Card menu */
 .card{
-  margin-top: 95px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,6 +320,7 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
+  border: none;
 }
 
 .card__item {
@@ -356,6 +363,8 @@ h2 {
     rgb(252, 227, 138) 0%,
     rgb(243, 129, 129) 100%
   );
+  margin-bottom: 30px;
+
 }
 
 .card__image:hover img {
@@ -446,7 +455,6 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   color: #333333;
-  margin-top: 30px;
 }
 
 .card__position {
@@ -459,9 +467,6 @@ h2 {
 }
 
 /* footer */
-.footer {
-  margin-top: 80px;
-}
 
 .footer .footer__content {
   display: -webkit-box;
