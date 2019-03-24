@@ -1,7 +1,0 @@
-.card__item {
-  @include center-flex('hor');
-  flex-direction: column;
-  width: 380px;
-  background-image: none;
-  transition: background-image 2s;
-}
