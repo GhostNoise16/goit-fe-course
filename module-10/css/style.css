@@ -43,16 +43,16 @@ img {
 }
 
 .header__menu {
-  
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   min-height: 50px;
   width: 90%;
   margin: 0 auto;
@@ -75,8 +75,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: 20px;
   width: 52%;
   font-size: 14px;
@@ -107,8 +107,8 @@ img {
   height: 3px;
   background: #fce38a;
   -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-          transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transition: -webkit-transform 200ms linear;
   transition: -webkit-transform 200ms linear;
   -o-transition: transform 200ms linear;
@@ -121,8 +121,8 @@ img {
 }
 .header__navigation--item:hover::after {
   -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-          transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .shopping_cart svg:hover {
@@ -230,7 +230,7 @@ h2 {
   background: #f38181;
   -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 
@@ -240,10 +240,10 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -253,8 +253,8 @@ h2 {
 .service__list--item {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 380px;
-          flex: 0 0 380px;
+  -ms-flex: 0 0 380px;
+  flex: 0 0 380px;
   height: 145px;
   margin-bottom: 40px;
   text-align: left;
@@ -314,11 +314,11 @@ h2 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style: none;
   border: none;
 }
@@ -328,12 +328,12 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 380px;
   background-image: none;
   -webkit-transition: background-image 2s;
@@ -382,10 +382,10 @@ h2 {
 
 .card__item .card__image:hover {
   -webkit-transform: translate(-10px, -10px);
-      -ms-transform: translate(-10px, -10px);
-          transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
   -webkit-box-shadow: 10px 15px 15px rgba(149, 225, 211, 1);
-          box-shadow: 10px 15px 15px rgba(149, 225, 211, 1);
+  box-shadow: 10px 15px 15px rgba(149, 225, 211, 1);
 }
 
 .card__socials {
@@ -393,14 +393,14 @@ h2 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -411,11 +411,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 56px;
   width: 56px;
   border-right: 0.5pt solid rgb(246, 161, 161);
@@ -473,11 +473,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 65px;
   min-width: 100%;
   border-top: 1px solid #e5e5e5;
@@ -514,8 +514,8 @@ h2 {
   color: white;
   font-size: 14px;
   font-family: 'Montserrat-Bold';
-    font-weight: 700;
-    font-style: normal;
+  font-weight: 700;
+  font-style: normal;
   cursor: pointer;
 }
 
@@ -524,7 +524,7 @@ h2 {
     background: url(../img/background@2x.jpg) no-repeat center top;
     min-height: 1000px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }

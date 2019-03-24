@@ -1,0 +1,22 @@
+.service__h3 {
+  font-family: $secondary-font-montserrat;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: $card-name-color;
+  text-align: center;
+  margin-bottom: 95px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 47.5%;
+    bottom: -42px;
+    width: 60px;
+    height: 5px;
+    background: $main-coral-color;
+    transform: scaleX(1);
+  }
+}

@@ -1,0 +1,8 @@
+.header__menu {
+  @include center-flex('ver');
+  @include flex-space('between');
+  min-height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10.5em;
+}

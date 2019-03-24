@@ -1,0 +1,25 @@
+@mixin center-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}
+
+@mixin flex-space($type) {
+  display: flex;
+
+  @if $type== 'between' {
+    justify-content: space-between;
+  } @else if $type== 'around' {
+    justify-content: space-around;
+  }
+  @else if $type== 'evenly' {
+    justify-content: space-evenly;
+  }
+}
