@@ -1,0 +1,7 @@
+.header__navigation {
+  @include flex-space('between');
+  height: 20px;
+  width: 52%;
+  font-size: 14px;
+  list-style: none;
+}

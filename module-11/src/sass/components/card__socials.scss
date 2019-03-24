@@ -1,0 +1,39 @@
+.card__socials {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include center-flex('hor');
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card__socials a {
+  @include center-flex('all');
+  height: 56px;
+  width: 56px;
+  border-right: 0.5pt solid rgb(246, 161, 161);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $secondary-yellow-color;
+  opacity: 0;
+  transition: opacity 0.5s, background-color 0.5s;
+
+  &:hover {
+    background: $main-coral-color;
+    cursor: pointer;
+  }
+}
+
+
+.card__socials svg {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  fill: $main-coral-color;
+}
+
+.card__socials a:hover svg {
+  fill: $primary-white-color;
+}

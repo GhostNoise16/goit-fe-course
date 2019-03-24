@@ -1,0 +1,32 @@
+.service__list--item {
+  position: relative;
+  flex: 0 0 380px;
+  height: 145px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-size: 15px;
+  color: $card-text-color;
+  cursor: pointer;
+}
+
+.service__list--item h4 {
+  position: absolute;
+  top: 40px;
+  left: 92px;
+  font-size: 14px;
+  font-family: $main-font-montserrat;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: $card-name-color;
+}
+
+.service__list--item p {
+  position: absolute;
+  left: 92px;
+  top: 65px;
+  font-size: 14px;
+  font-family: $main-font-roboto;
+  font-weight: 300;
+  font-style: normal;
+}
