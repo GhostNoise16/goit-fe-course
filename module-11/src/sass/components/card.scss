@@ -5,4 +5,15 @@
   border: none;
   width: 90%;
   margin: 0 auto 80px;
+
+  @media (min-width: 1460px) {
+    width: 85%;
+  }
+
+  @media (min-width: 1550px) and (max-width: 1700px) {
+    width: 82%;
+  }
+  @media (min-width: 1700px) {
+    @include flex-space ('around');
+  }
 }

@@ -5,4 +5,12 @@
   width: 90%;
   margin: 0 auto;
   margin-bottom: 10.5em;
+
+  @media (min-width: 1600px) {
+    width: 72%;
+  }
+
+  @media (min-width: 2110px) {
+    width: 57%;
+  }
 }

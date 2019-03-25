@@ -449,7 +449,7 @@ img {
 
 .header__bg {
   position: relative;
-  background: linear-gradient(360deg, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%), url(./images/background.jpg);
+  background: linear-gradient(360deg, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%), url(../images/background.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   height: 1000px;
@@ -600,7 +600,8 @@ h2 {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: none;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .service__list--item {
@@ -835,8 +836,51 @@ h2 {
   cursor: pointer;
 }
 
+@media (min-width: 1460px) {
+  .card {
+    width: 85%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header__menu {
+    width: 72%;
+  }
+
+  .service__list {
+    width: 72%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .card {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 2110px) {
+  .header__menu {
+    width: 57%;
+  }
+
+  .service__list {
+    width: 57%;
+  }
+}
+
+@media (min-width: 1550px) and (max-width: 1700px) {
+  .card {
+    width: 82%;
+  }
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header__bg {
-    background: linear-gradient(360deg, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%), url(./images/background@2x.jpg);
+    background: linear-gradient(360deg, rgba(252, 227, 138, 0.8) 0%, rgba(243, 129, 129, 0.8) 100%), url(../images/background@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+    width: 100%;
   }
 }
