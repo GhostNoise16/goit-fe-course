@@ -21,13 +21,14 @@ let byDroid = prompt('Какое количечтво дроидов Вамну�
 
 if(byDroid === null){
     console.log('Отменено пользователем!');
+}else if(byDroid === '' || isNaN(byDroid)){
+    console.log("Пользователь указал не число!");
 }else{
-    totalPrice = pricePerDroid * Number(byDroid);
-    console.log(totalPrice);
-}
-if(credits < pricePerDroid * Number(byDroid)){
+    totalPrice = pricePerDroid * byDroid;
+if(credits <  totalPrice){
     console.log('Недостаточно средств на счету!');
 }
 else{
-    alert(`Вы купили ${Number(byDroid)}, на счеиу осталось ${credits - totalPrice} кредитов.`)
+    alert(`Вы купили ${byDroid}, на счету осталось ${credits - totalPrice} кредитов.`)
+}
 }

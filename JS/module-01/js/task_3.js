@@ -18,36 +18,34 @@ PS: используй switch
 */
 
 const nameOfCountry = prompt("Введите пожалуйста название своей страны: ").toLowerCase();
-let price;
+
+const priceChina = 100;
+const priceSouthAmerica = 250;
+const priceAustralia = 170;
+const priceIndia = 80;
+const priceJamaica = 120;
 
 switch (nameOfCountry) {
     
     case 'китай':
-    price = 100;
-    alert(`Доставка в Китай будет стоить ${price} кредитов`)
+    console.log(`Доставка в Китай будет стоить ${priceChina} кредитов`);
     break;
 
     case 'южная америка': 
-    price = 250;
-    alert(`Доставка в Южную Америку будет стоить ${price} кредитов`)
+    console.log(`Доставка в Южную Америку будет стоить ${priceSouthAmerica} кредитов`);
     break;
 
     case 'австралия': 
-    price = 170;
-    alert(`Доставка в Австралию будет стоить ${price} кредитов`)
+    console.log(`Доставка в Австралию будет стоить ${priceAustralia} кредитов`)
     break;
 
     case 'индия': 
-    price = 80;
-    alert(`Доставка в Индию будет стоить ${price} кредитов`)
+    console.log(`Доставка в Индию будет стоить ${priceIndia} кредитов`)
     break;
 
     case 'ямайка': 
-    price = 120;
-    alert(`Доставка в Ямайку будет стоить ${price} кредитов`)
+    console.log(`Доставка в Ямайку будет стоить ${priceJamaica} кредитов`)
     break;
     
     default: console.log("В вашей стране доставка не доступна");
 }
-alert("Спасибо что то что заказали у нас доставку")
-console.log(`Заказ был отправлен в ${nameOfCountry}`);
