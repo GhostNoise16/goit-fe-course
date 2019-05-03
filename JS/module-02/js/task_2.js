@@ -19,21 +19,22 @@ let attemptsLeft = 3;
 
 
 
-do {
-    attemptsLeft -= 1;
-    const enterPassword = prompt('Введите пароль: ')
-    if (enterPassword === null) {
-        alert('Отмена ввода!');
-        break;
-    } else if (passwords.includes(enterPassword)) {
+while (true) {
+    let enterPassword = prompt('Введите пароль: ');
+    if (passwords.includes(enterPassword)) {
         alert('Добро пожаловать!');
         break;
-    } else {
+    }
+    if (enterPassword === null) {
+        alert('Отмена ввода');
+        break;
+    }
+    attemptsLeft -= 1;
+    if (!passwords.includes(enterPassword)) {
         alert(`Неверный пароль, у вас осталось ${attemptsLeft} попыток`);
     }
-
     if (attemptsLeft === 0) {
-       alert('У вас закончились попытки, аккаунт заблокирован!');
+        alert('У вас закончились попытки, аккаунт заблокирован!');
+        break;
     }
-    
-} while (attemptsLeft >= 1 && attemptsLeft <= 3)    
+} 

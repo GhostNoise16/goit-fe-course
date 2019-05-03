@@ -25,16 +25,16 @@ let total = 0;
 while (true) {
     input = prompt('Enter number: ');
     if (input === null) break;
-    else if (input === '' || isNaN(input)) {
+    else if (Number.isNaN(Number(input))) {
         alert('Было введено не число, попробуйте еще раз');
         continue;
     }
     numbers.push(Number(input));
 }
 
-for (let i = 0; i < numbers.length; i += 1) {
-    if (numbers !== null)
-        total += numbers[i];
-}    
+for (let sum of numbers) {
+    if (numbers.length !== 0) {
+        total += sum;
+    }
+}
 console.log(`Общая сумма чисел равна ${total}`);
-
