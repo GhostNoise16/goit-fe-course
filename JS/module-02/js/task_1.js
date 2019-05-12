@@ -29,12 +29,14 @@ while (true) {
         alert('Было введено не число, попробуйте еще раз');
         continue;
     }
-    numbers.push(Number(input));
+    numbers.push(+input);
 }
 
 for (let sum of numbers) {
-    if (numbers.length !== 0) {
+    if (numbers.length > 0) {
         total += sum;
     }
 }
-console.log(`Общая сумма чисел равна ${total}`);
+if (numbers.length > 0) {
+    console.log(`Общая сумма чисел равна ${total}`);
+}
