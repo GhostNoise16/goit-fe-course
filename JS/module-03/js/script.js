@@ -36,32 +36,26 @@ addLogin добавляет или не добавляет логин в мас�
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
 const isLoginValid = function (login) {
-    if (login.length >= 4 && login.length <= 16) return true;
-    else return false
+    return (login.length >= 4 && login.length <= 16);
 };
 
 const isLoginUnique = function (allLogins, login) {
-    for (let i = 0; i < allLogins.length; i += 1) {
-        if (allLogins.includes(login) === false) return true;
-        else return false;
-    }
+    return (allLogins.includes(login) === false);
 };
 
 const addLogin = function(allLogins, login) {
-    const validLogin = isLoginValid(login);
-    const uniqueLogin = isLoginUnique(allLogins, login);
-    
-    if(validLogin === false){
-        return 'Ошибка! Логин должен быть от 4 до 16 символов'
+   
+    if(!isLoginValid(login)){
+        return 'Ошибка! Логин должен быть от 4 до 16 символов';
     }
-    
-    else if(uniqueLogin === false){
+    if (isLoginUnique(allLogins, login)){
+        allLogins.push(login);
+        return 'Логин успешно добавлен!';
+    }
+    else {
         return 'Такой логин уже используется!';
     }
-    else if (uniqueLogin === true){
-        allLogins.push(login);
-        return 'Логин успешно добавлен!'
-    }
+    
 };
 // Вызовы функции для проверки
 console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
