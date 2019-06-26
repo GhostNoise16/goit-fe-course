@@ -128,6 +128,7 @@ const createNoteContent = note => {
 
   const noteBody = document.createElement('p');
   noteBody.classList.add('note__body');
+  noteBody.textContent = note.body;
 
   noteContent.appendChild(noteTitle);
   noteContent.appendChild(noteBody);
