@@ -215,7 +215,7 @@ const createListItem = note => {
 
 const renderNoteList = (listRef, notes) => {
   const itemsList = notes.map(note => createListItem(note));
-  listRef.append(...itemsList)
+  listRef.append(...itemsList);
 }
 
 renderNoteList(noteList, notepad.notes)
